@@ -1,0 +1,46 @@
+Problem:    utilities
+Rows:       5
+Columns:    5
+Non-zeros:  18
+Status:     OPTIMAL
+Objective:  slack = 0.02 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 slack        B           0.02                             
+     2 satisfy_inequalities[A1]
+                    B           0.04            -0               
+     3 satisfy_inequalities[A2]
+                    NL             0            -0                        -0.5 
+     4 satisfy_inequalities[A3]
+                    NL             0            -0                        -0.1 
+     5 satisfy_inequalities[A4]
+                    NL             0            -0                        -0.4 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 utilities[A] NL             0             0             1         -0.02 
+     2 utilities[B] B            0.8             0             1 
+     3 utilities[C] B            0.4             0             1 
+     4 utilities[D] NU             1             0             1          0.02 
+     5 epsilon      B           0.02                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.78e-17 on row 3
+        max.rel.err = 2.10e-17 on row 3
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.11e-16 on column 5
+        max.rel.err = 3.70e-17 on column 5
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
